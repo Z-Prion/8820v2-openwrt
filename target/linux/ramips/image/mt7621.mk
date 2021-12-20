@@ -373,6 +373,16 @@ define Device/dlink_dir-878-a1
 endef
 TARGET_DEVICES += dlink_dir-878-a1
 
+define Device/zte_e8820v2
+  IMAGE_SIZE := 16064k
+  DEVICE_VENDOR := ZTE
+  DEVICE_MODEL := E8820V2
+  DEVICE_PACKAGES := \
+    kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport wpad luci
+endef
+TARGET_DEVICES += zte_e8820v2
+
+
 define Device/dlink_dir-882-a1
   $(Device/dlink_dir-8xx-a1)
   DEVICE_MODEL := DIR-882
